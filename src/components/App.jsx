@@ -27,20 +27,9 @@ export class App extends Component {
       number,
     };
 
-    // if (
-    //   this.state.contacts
-    //     .map(({ name }) => name.toLowerCase())
-    //     .includes(name.toLowerCase())
-    // ) {
-    //   alert(`${name} is already in contacts.`);
-    // }
-
     if (
-      contacts
-        .map(item => item.name.toLowerCase())
-        .includes(newContact.name.toLoweCase())
+      contacts.map(item => item.name.toLowerCase()).includes(name.toLowerCase())
     ) {
-      console.log(newContact.name);
       alert(newContact.name + 'is already in contacts');
     } else {
       this.setState(prevState => ({
