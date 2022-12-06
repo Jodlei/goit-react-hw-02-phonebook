@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const FilterTitle = styled.h3``;
+export const FilterTitle = styled.h3`
+  margin-bottom: 10px;
+`;
 
 export const FilterForm = styled.form`
   display: flex;
@@ -14,4 +16,5 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   width: 300px;
+  margin-top: 5px;
 `;
